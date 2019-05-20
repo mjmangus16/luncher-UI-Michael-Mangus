@@ -3,7 +3,6 @@
 .home {
   .width(90%, 1150px);
   margin-top: 77px;
-  margin-bottom: 25px;
   padding-top: 25px;
   text-align: center;
 
@@ -41,11 +40,16 @@
 
   .action {
     .flexProperties(space-around, row, nowrap);
+    padding: 25px 0px;
 
     > div {
       .flexProperties(space-around, column, nowrap);
-      margin: 50px auto 25px;
-      width: 45%;
+      padding: 75px 25px;
+      width: 50%;
+
+      &:first-child {
+        border-right: 1px solid @font-color;
+      }
 
       button {
         padding: 10px 25px;
@@ -55,6 +59,11 @@
         font-size: 1.75rem;
         background-color: @orange;
         box-shadow: 1px 1px 10px;
+        cursor: pointer;
+
+        &:hover {
+          box-shadow: none;
+        }
       }
     }
   }
