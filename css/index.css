@@ -184,7 +184,7 @@ p {
     border-radius: 0;
   }
 }
-.nav-container h2 {
+.nav-container h1 {
   padding: 10px;
 }
 .nav-container nav {
@@ -269,8 +269,8 @@ footer {
 .home section:last-child {
   border-bottom: none;
 }
-.home section h3 {
-  padding: 25px;
+.home section h2 {
+  padding: 25px 0px 50px;
 }
 .home section > div {
   display: flex;
