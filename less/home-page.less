@@ -1,0 +1,41 @@
+// Home Content
+
+.home {
+  .width(90%, 1150px);
+  margin-top: 77px;
+  margin-bottom: 25px;
+  padding-top: 25px;
+  text-align: center;
+
+  @media @phone {
+    width: 95%;
+  }
+
+  .top-image {
+    width: 100%;
+  }
+
+  section {
+    padding: 25px 0px 50px;
+    border-bottom: 1px solid @font-color;
+
+    &:last-child {
+      border-bottom: none;
+    }
+    h3 {
+      padding: 25px;
+    }
+
+    > div {
+      .flexProperties(space-around, row, nowrap);
+
+      img {
+        width: 50%;
+      }
+
+      p {
+        padding: 5rem;
+      }
+    }
+  }
+}
