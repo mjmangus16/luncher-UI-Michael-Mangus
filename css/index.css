@@ -182,6 +182,7 @@ p {
     width: 100%;
     margin: 0px;
     border-radius: 0;
+    position: static;
   }
 }
 .nav-container h1 {
@@ -256,6 +257,7 @@ footer {
 @media (max-width: 700px) {
   .home {
     width: 95%;
+    margin-top: 0px;
   }
 }
 .home .top-image {
@@ -265,11 +267,22 @@ footer {
   padding: 25px 0px 50px;
   border-bottom: 1px solid #404040;
 }
+@media (max-width: 700px) {
+  .home section {
+    padding-bottom: 25px;
+  }
+}
 .home section:last-child {
   border-bottom: none;
 }
 .home section h2 {
   padding: 25px 0px 50px;
+}
+@media (max-width: 700px) {
+  .home section h2 {
+    font-size: 2.5rem;
+    padding-bottom: 25px;
+  }
 }
 .home section > div {
   display: flex;
@@ -277,12 +290,36 @@ footer {
   flex-direction: row;
   align-items: center;
   flex-wrap: nowrap;
+  padding: 0px 50px;
+}
+@media (max-width: 700px) {
+  .home section > div {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 0px 20px 20px;
+  }
 }
 .home section > div img {
   width: 50%;
 }
+@media (max-width: 700px) {
+  .home section > div img {
+    width: 100%;
+    padding: 0px;
+  }
+}
 .home section > div p {
   padding: 5rem;
+}
+@media (max-width: 700px) {
+  .home section > div p {
+    width: 100%;
+    padding: 25px 0px;
+  }
 }
 .home .action {
   display: flex;

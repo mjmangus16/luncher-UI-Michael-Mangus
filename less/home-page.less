@@ -8,6 +8,7 @@
 
   @media @phone {
     width: 95%;
+    margin-top: 0px;
   }
 
   .top-image {
@@ -18,22 +19,48 @@
     padding: 25px 0px 50px;
     border-bottom: 1px solid @font-color;
 
+    @media @phone {
+      padding-bottom: 25px;
+    }
+
     &:last-child {
       border-bottom: none;
     }
     h2 {
       padding: 25px 0px 50px;
+
+      @media @phone {
+        font-size: 2.5rem;
+        padding-bottom: 25px;
+      }
     }
 
     > div {
       .flexProperties(space-around, row, nowrap);
+      padding: 0px 50px;
+
+      @media @phone {
+        .flexProperties(space-around, column, nowrap);
+        width: 100%;
+        padding: 0px 20px 20px;
+      }
 
       img {
         width: 50%;
+
+        @media @phone {
+          width: 100%;
+          padding: 0px;
+        }
       }
 
       p {
         padding: 5rem;
+
+        @media @phone {
+          width: 100%;
+          padding: 25px 0px;
+        }
       }
     }
   }
