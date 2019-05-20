@@ -285,3 +285,28 @@ footer {
 .home section > div p {
   padding: 5rem;
 }
+.home .action {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.home .action > div {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 50px auto 25px;
+  width: 45%;
+}
+.home .action > div button {
+  padding: 10px 25px;
+  margin-top: 50px;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.75rem;
+  background-color: #f7bb50;
+  box-shadow: 1px 1px 10px;
+}

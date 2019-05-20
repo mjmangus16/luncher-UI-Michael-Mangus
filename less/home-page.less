@@ -38,4 +38,24 @@
       }
     }
   }
+
+  .action {
+    .flexProperties(space-around, row, nowrap);
+
+    > div {
+      .flexProperties(space-around, column, nowrap);
+      margin: 50px auto 25px;
+      width: 45%;
+
+      button {
+        padding: 10px 25px;
+        margin-top: 50px;
+        border: none;
+        border-radius: 1rem;
+        font-size: 1.75rem;
+        background-color: @orange;
+        box-shadow: 1px 1px 10px;
+      }
+    }
+  }
 }
