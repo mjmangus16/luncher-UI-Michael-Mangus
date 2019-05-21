@@ -1,30 +1,30 @@
 const users = [
   {
-    name: "michael",
+    name: "michael mangus",
     pic: "../img/Michael.jpg",
     title: "UI Developer",
     info: ""
   },
   {
-    name: "mike",
+    name: "mike jean-baptiste",
     pic: "../img/Mike.jpg",
     title: "UX Designer",
     info: ""
   },
   {
-    name: "ang",
+    name: "ang xu",
     pic: "../img/Ang.jpg",
     title: "UI Developer",
     info: ""
   },
   {
-    name: "joseph",
+    name: "joseph rios",
     pic: "../img/Joseph.jpg",
     title: "Back End Architect",
     info: ""
   },
   {
-    name: "jared",
+    name: "jared parrish",
     pic: "../img/Jared.jpg",
     title: "Front End Architect",
     info: ""
@@ -32,11 +32,26 @@ const users = [
 ];
 
 class AboutUser {
-  constructor(el, user, i) {
+  constructor(el, user) {
     this.el = el;
     this.imgBx = this.el.querySelector(".imgBx");
     this.image = this.imgBx.querySelector("img");
     this.image.src = user.pic;
+
+    this.contentBx = this.el.querySelector(".content");
+
+    this.name = document.createElement("h3");
+    this.name.textContent = user.name;
+
+    this.title = document.createElement("h5");
+    this.title.textContent = user.title;
+
+    this.info = document.createElement("p");
+    this.info.textContent = user.info;
+
+    this.contentBx.append(this.name);
+    this.contentBx.append(this.title);
+    this.contentBx.append(this.info);
   }
 }
 
@@ -81,4 +96,4 @@ const allAboutUsers = Array.from(
   document.querySelectorAll(".about .aboutUser")
 );
 
-allAboutUsers.forEach((el, i) => new AboutUser(el, users[i], i));
+allAboutUsers.forEach((el, i) => new AboutUser(el, users[i]));
