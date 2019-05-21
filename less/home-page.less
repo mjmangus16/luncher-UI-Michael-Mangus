@@ -51,6 +51,7 @@
         @media @phone {
           width: 100%;
           padding: 0px;
+          order: 2;
         }
       }
 
@@ -60,6 +61,7 @@
         @media @phone {
           width: 100%;
           padding: 25px 0px;
+          order: 1;
         }
       }
     }
@@ -96,6 +98,10 @@
 
         &:hover {
           box-shadow: none;
+        }
+
+        &:focus {
+          outline: 0;
         }
 
         @media @phone {

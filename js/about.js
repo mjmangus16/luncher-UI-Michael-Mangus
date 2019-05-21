@@ -85,7 +85,6 @@ const aboutContainer = document.querySelector(".about");
 const aboutUsersEl = users.map(user => {
   const mainDiv = document.createElement("div");
   mainDiv.classList.add("aboutUser");
-  mainDiv.setAttribute("data-user", user.name);
 
   return mainDiv;
 });

@@ -353,6 +353,7 @@ footer {
   .container section > div img {
     width: 100%;
     padding: 0px;
+    order: 2;
   }
 }
 .container section > div p {
@@ -362,6 +363,7 @@ footer {
   .container section > div p {
     width: 100%;
     padding: 25px 0px;
+    order: 1;
   }
 }
 .container .action {
@@ -401,6 +403,9 @@ footer {
 }
 .container .action > div button:hover {
   box-shadow: none;
+}
+.container .action > div button:focus {
+  outline: 0;
 }
 @media (max-width: 700px) {
   .container .action > div button {
@@ -490,4 +495,13 @@ footer {
 }
 .about .aboutUser .content h5 {
   margin-bottom: 10px;
+}
+.about .aboutUser .content button {
+  width: 75%;
+  height: 35px;
+  background-color: #404040;
+  border: none;
+  color: #f7bb50;
+  margin-top: 50px;
+  font-size: 1.5em;
 }
