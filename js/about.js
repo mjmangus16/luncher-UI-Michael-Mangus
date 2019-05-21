@@ -34,33 +34,43 @@ const users = [
 class AboutUser {
   constructor(el, user, i) {
     this.el = el;
-    this.img = this.el.querySelector("img");
-    this.img.src = user.pic;
-    this.title = document.createElement("h3");
-    this.title.textContent = user.title;
-
-    if (i % 2 === 1) {
-      this.el.append(this.title);
-    } else {
-      this.el.prepend(this.title);
-    }
-
-    this.el.onclick = () => this.test();
-  }
-
-  test() {
-    console.log("test");
+    this.imgBx = this.el.querySelector(".imgBx");
+    this.image = this.imgBx.querySelector("img");
+    this.image.src = user.pic;
   }
 }
 
 const aboutContainer = document.querySelector(".about");
 
 const aboutUsersEl = users.map(user => {
-  const div = document.createElement("div");
-  div.classList.add("aboutUser");
-  div.setAttribute("data-user", user.name);
-  div.append(document.createElement("img"));
-  return div;
+  const mainDiv = document.createElement("div");
+  mainDiv.classList.add("aboutUser");
+  mainDiv.setAttribute("data-user", user.name);
+
+  const input = document.createElement("input");
+  input.setAttribute("type", "checkbox");
+  input.setAttribute("name", "");
+
+  const div1 = document.createElement("div");
+  div1.classList.add("toggle");
+  div1.textContent = "+";
+
+  const div2 = document.createElement("div");
+  div2.classList.add("imgBx");
+
+  const img = document.createElement("img");
+  img.classList.add("userImage");
+
+  div2.append(img);
+
+  const div3 = document.createElement("div");
+  div3.classList.add("content");
+
+  mainDiv.append(input);
+  mainDiv.append(div1);
+  mainDiv.append(div2);
+  mainDiv.append(div3);
+  return mainDiv;
 });
 
 aboutUsersEl.forEach(userEl => {
