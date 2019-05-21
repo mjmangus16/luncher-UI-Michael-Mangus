@@ -34,6 +34,31 @@ const users = [
 class AboutUser {
   constructor(el, user) {
     this.el = el;
+
+    this.input = document.createElement("input");
+    this.input.setAttribute("type", "checkbox");
+    this.input.setAttribute("name", "");
+
+    this.div1 = document.createElement("div");
+    this.div1.classList.add("toggle");
+    this.div1.textContent = "+";
+
+    this.div2 = document.createElement("div");
+    this.div2.classList.add("imgBx");
+
+    this.img = document.createElement("img");
+    this.img.classList.add("userImage");
+
+    this.div2.append(this.img);
+
+    this.div3 = document.createElement("div");
+    this.div3.classList.add("content");
+
+    this.el.append(this.input);
+    this.el.append(this.div1);
+    this.el.append(this.div2);
+    this.el.append(this.div3);
+
     this.imgBx = this.el.querySelector(".imgBx");
     this.image = this.imgBx.querySelector("img");
     this.image.src = user.pic;
@@ -62,29 +87,6 @@ const aboutUsersEl = users.map(user => {
   mainDiv.classList.add("aboutUser");
   mainDiv.setAttribute("data-user", user.name);
 
-  const input = document.createElement("input");
-  input.setAttribute("type", "checkbox");
-  input.setAttribute("name", "");
-
-  const div1 = document.createElement("div");
-  div1.classList.add("toggle");
-  div1.textContent = "+";
-
-  const div2 = document.createElement("div");
-  div2.classList.add("imgBx");
-
-  const img = document.createElement("img");
-  img.classList.add("userImage");
-
-  div2.append(img);
-
-  const div3 = document.createElement("div");
-  div3.classList.add("content");
-
-  mainDiv.append(input);
-  mainDiv.append(div1);
-  mainDiv.append(div2);
-  mainDiv.append(div3);
   return mainDiv;
 });
 
