@@ -182,25 +182,49 @@ p {
     width: 100%;
     margin: 0px;
     border-radius: 0;
-    position: static;
   }
 }
-.nav-container h1 {
-  padding: 10px;
+@media (max-width: 700px) {
+  .nav-container .logo-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
+.nav-container .logo-container h1 {
+  padding-top: 10px;
+}
+@media (max-width: 700px) {
+  .nav-container .logo-container h1 {
+    text-align: left;
+    font-size: 2.5rem;
+    padding: 0px 0px 0px 10px;
+  }
+}
+.nav-container .logo-container button {
+  display: none;
+}
+@media (max-width: 700px) {
+  .nav-container .logo-container button {
+    display: block;
+    font-size: 2em;
+    padding: 5px 20px;
+  }
 }
 .nav-container nav {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: nowrap;
   margin: auto;
   font-size: 1.5rem;
-  padding-bottom: 10px;
 }
 @media (min-width: 701px) {
   .nav-container nav {
     max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
   }
 }
 @media (max-width: 700px) {
@@ -211,17 +235,29 @@ p {
     align-items: center;
     flex-wrap: nowrap;
     padding-bottom: 0px;
+    display: none;
   }
 }
 .nav-container nav a {
   text-decoration: none;
   color: #404040;
+  padding: 10px 20px 5px;
+  margin-bottom: 5px;
 }
 @media (max-width: 700px) {
   .nav-container nav a {
     padding: 10px 0px;
     border-top: 1px solid #404040;
     width: 100%;
+    margin-bottom: 0px;
+  }
+}
+.nav-container nav .active-link {
+  border-bottom: 3px solid #f7bb50;
+}
+@media (max-width: 700px) {
+  .nav-container nav .active-link {
+    background-color: #f7bb50;
   }
 }
 footer {
@@ -246,7 +282,7 @@ footer {
     font-size: 1.25rem;
   }
 }
-.home {
+.container {
   width: 90%;
   max-width: 1150px;
   margin: auto;
@@ -255,36 +291,36 @@ footer {
   text-align: center;
 }
 @media (max-width: 700px) {
-  .home {
+  .container {
     width: 95%;
-    margin-top: 0px;
+    margin-top: 35px;
   }
 }
-.home .top-image {
+.container .top-image {
   width: 100%;
 }
-.home section {
+.container section {
   padding: 25px 0px 50px;
   border-bottom: 1px solid #404040;
 }
 @media (max-width: 700px) {
-  .home section {
+  .container section {
     padding-bottom: 25px;
   }
 }
-.home section:last-child {
+.container section:last-child {
   border-bottom: none;
 }
-.home section h2 {
+.container section h2 {
   padding: 25px 0px 50px;
 }
 @media (max-width: 700px) {
-  .home section h2 {
+  .container section h2 {
     font-size: 2.5rem;
     padding-bottom: 25px;
   }
 }
-.home section > div {
+.container section > div {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
@@ -293,7 +329,7 @@ footer {
   padding: 0px 50px;
 }
 @media (max-width: 700px) {
-  .home section > div {
+  .container section > div {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -303,25 +339,25 @@ footer {
     padding: 0px 20px 20px;
   }
 }
-.home section > div img {
+.container section > div img {
   width: 50%;
 }
 @media (max-width: 700px) {
-  .home section > div img {
+  .container section > div img {
     width: 100%;
     padding: 0px;
   }
 }
-.home section > div p {
+.container section > div p {
   padding: 5rem;
 }
 @media (max-width: 700px) {
-  .home section > div p {
+  .container section > div p {
     width: 100%;
     padding: 25px 0px;
   }
 }
-.home .action {
+.container .action {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
@@ -329,7 +365,7 @@ footer {
   flex-wrap: nowrap;
   padding: 25px 0px;
 }
-.home .action > div {
+.container .action > div {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -338,10 +374,15 @@ footer {
   padding: 75px 25px;
   width: 50%;
 }
-.home .action > div:first-child {
+.container .action > div:first-child {
   border-right: 1px solid #404040;
 }
-.home .action > div button {
+@media (max-width: 700px) {
+  .container .action > div h3 {
+    font-size: 2rem;
+  }
+}
+.container .action > div button {
   padding: 10px 25px;
   margin-top: 50px;
   border: none;
@@ -351,6 +392,11 @@ footer {
   box-shadow: 1px 1px 10px;
   cursor: pointer;
 }
-.home .action > div button:hover {
+.container .action > div button:hover {
   box-shadow: none;
+}
+@media (max-width: 700px) {
+  .container .action > div button {
+    font-size: 1.25rem;
+  }
 }

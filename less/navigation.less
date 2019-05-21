@@ -12,37 +12,68 @@
     width: 100%;
     margin: 0px;
     border-radius: 0;
-    position: static;
   }
 
-  h1 {
-    padding: 10px;
+  .logo-container {
+    @media @phone {
+      .flexProperties(space-between, row, nowrap);
+    }
+
+    h1 {
+      padding-top: 10px;
+
+      @media @phone {
+        text-align: left;
+        font-size: 2.5rem;
+        padding: 0px 0px 0px 10px;
+      }
+    }
+
+    button {
+      display: none;
+
+      @media @phone {
+        display: block;
+        font-size: 2em;
+        padding: 5px 20px;
+      }
+    }
   }
 
   nav {
-    .flexProperties(space-between, row, nowrap);
-
     margin: auto;
     font-size: 1.5rem;
-    padding-bottom: 10px;
 
     @media @desktop {
       max-width: 500px;
+      .flexProperties(space-between, row, nowrap);
     }
 
     @media @phone {
       .flexProperties(space-around, column, nowrap);
       padding-bottom: 0px;
+      display: none;
     }
 
     a {
       text-decoration: none;
       color: @font-color;
+      padding: 10px 20px 5px;
+      margin-bottom: 5px;
 
       @media @phone {
         padding: 10px 0px;
         border-top: 1px solid @font-color;
         width: 100%;
+        margin-bottom: 0px;
+      }
+    }
+
+    .active-link {
+      border-bottom: 3px solid @orange;
+
+      @media @phone {
+        background-color: @orange;
       }
     }
   }
