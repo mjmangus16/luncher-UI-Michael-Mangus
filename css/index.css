@@ -178,14 +178,14 @@ p {
   top: 0;
   z-index: 4;
 }
-@media (max-width: 700px) {
+@media (max-width: 775px) {
   .nav-container {
     width: 100%;
     margin: 0px;
     border-radius: 0;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 775px) {
   .nav-container .logo-container {
     display: flex;
     justify-content: space-between;
@@ -197,7 +197,7 @@ p {
 .nav-container .logo-container h1 {
   padding-top: 10px;
 }
-@media (max-width: 700px) {
+@media (max-width: 775px) {
   .nav-container .logo-container h1 {
     text-align: left;
     font-size: 2.5rem;
@@ -210,7 +210,7 @@ p {
 .nav-container .logo-container button:focus {
   outline: 0;
 }
-@media (max-width: 700px) {
+@media (max-width: 775px) {
   .nav-container .logo-container button {
     display: block;
     font-size: 2em;
@@ -223,7 +223,7 @@ p {
   margin: auto;
   font-size: 1.5rem;
 }
-@media (min-width: 701px) {
+@media (min-width: 776px) {
   .nav-container nav {
     max-width: 500px;
     display: flex;
@@ -233,7 +233,7 @@ p {
     flex-wrap: nowrap;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 775px) {
   .nav-container nav {
     display: flex;
     justify-content: space-around;
@@ -250,7 +250,7 @@ p {
   padding: 10px 20px 5px;
   margin-bottom: 5px;
 }
-@media (max-width: 700px) {
+@media (max-width: 775px) {
   .nav-container nav a {
     width: 100%;
     margin-bottom: 0px;
@@ -263,7 +263,7 @@ p {
 .nav-container nav .active-link {
   border-bottom: 3px solid #f7bb50;
 }
-@media (max-width: 700px) {
+@media (max-width: 775px) {
   .nav-container nav .active-link {
     background-color: #f7bb50;
   }
@@ -288,14 +288,14 @@ footer {
   background-color: #97f793;
   box-shadow: 2px 2px 10px;
 }
-@media (max-width: 700px) {
+@media (max-width: 775px) {
   footer {
     width: 100%;
     margin-bottom: 0px;
     border-radius: 0px;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 775px) {
   footer p {
     font-size: 1.25rem;
   }
@@ -308,7 +308,7 @@ footer {
   padding-top: 25px;
   text-align: center;
 }
-@media (max-width: 700px) {
+@media (max-width: 775px) {
   .container {
     width: 95%;
     margin-top: 35px;
@@ -321,7 +321,7 @@ footer {
   padding: 25px 0px 50px;
   border-bottom: 1px solid #404040;
 }
-@media (max-width: 700px) {
+@media (max-width: 775px) {
   .container section {
     padding-bottom: 25px;
   }
@@ -332,7 +332,7 @@ footer {
 .container section h2 {
   padding: 25px 10px 50px;
 }
-@media (max-width: 700px) {
+@media (max-width: 775px) {
   .container section h2 {
     font-size: 2rem;
     padding-bottom: 25px;
@@ -346,7 +346,7 @@ footer {
   flex-wrap: nowrap;
   padding: 0px 50px;
 }
-@media (max-width: 700px) {
+@media (max-width: 775px) {
   .container section > div {
     display: flex;
     justify-content: space-around;
@@ -360,7 +360,7 @@ footer {
 .container section > div img {
   width: 50%;
 }
-@media (max-width: 700px) {
+@media (max-width: 775px) {
   .container section > div img {
     width: 100%;
     padding: 0px;
@@ -372,7 +372,7 @@ footer {
   font-size: 1.75rem;
   line-height: 3.5rem;
 }
-@media (max-width: 700px) {
+@media (max-width: 775px) {
   .container section > div p {
     width: 100%;
     padding: 25px 0px;
@@ -401,7 +401,7 @@ footer {
 .container .action > div:first-child {
   border-right: 1px solid #404040;
 }
-@media (max-width: 700px) {
+@media (max-width: 775px) {
   .container .action > div h3 {
     font-size: 2rem;
   }
@@ -422,7 +422,7 @@ footer {
 .container .action > div button:focus {
   outline: 0;
 }
-@media (max-width: 700px) {
+@media (max-width: 775px) {
   .container .action > div button {
     font-size: 1.25rem;
   }
@@ -443,7 +443,7 @@ footer {
   margin: 25px auto;
   overflow: hidden;
 }
-@media (max-width: 700px) {
+@media (max-width: 775px) {
   .about .aboutUser {
     width: 300px;
     height: 275px;
@@ -517,7 +517,7 @@ footer {
   transition: 0.5s;
   opacity: 0;
 }
-@media (max-width: 700px) {
+@media (max-width: 775px) {
   .about .aboutUser .content {
     padding: 20px 5px;
   }
