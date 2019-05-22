@@ -319,11 +319,11 @@ footer {
   border-bottom: none;
 }
 .container section h2 {
-  padding: 25px 0px 50px;
+  padding: 25px 10px 50px;
 }
 @media (max-width: 700px) {
   .container section h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding-bottom: 25px;
   }
 }
@@ -358,12 +358,16 @@ footer {
 }
 .container section > div p {
   padding: 5rem;
+  font-size: 1.75rem;
+  line-height: 3.5rem;
 }
 @media (max-width: 700px) {
   .container section > div p {
     width: 100%;
     padding: 25px 0px;
     order: 1;
+    font-size: 1.5rem;
+    line-height: 3rem;
   }
 }
 .container .action {
@@ -418,6 +422,7 @@ footer {
   flex-direction: column;
   align-items: center;
   flex-wrap: nowrap;
+  padding-top: 0px;
 }
 .about .aboutUser {
   position: relative;
