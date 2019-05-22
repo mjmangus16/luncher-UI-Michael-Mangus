@@ -59,7 +59,7 @@
     @media @phone {
       .flexProperties(space-around, column, nowrap);
       padding-bottom: 0px;
-      display: none;
+      max-height: 0px;
     }
 
     a {
@@ -69,10 +69,12 @@
       margin-bottom: 5px;
 
       @media @phone {
-        padding: 10px 0px;
-        border-top: 1px solid @font-color;
         width: 100%;
         margin-bottom: 0px;
+        padding: 0px;
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
       }
     }
 
@@ -83,9 +85,18 @@
         background-color: @orange;
       }
     }
+    .visible {
+      display: block;
+      opacity: 1;
+      max-height: 50px;
+      border-top: 1px solid @font-color;
+      padding: 10px 0px;
+      transition: opacity 1.25s ease-in;
+    }
   }
 
-  .visible {
-    display: flex;
+  .visible-nav {
+    max-height: 300px;
+    transition: max-height 1s ease-in;
   }
 }
