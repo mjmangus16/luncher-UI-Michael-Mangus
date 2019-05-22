@@ -3,7 +3,7 @@ const users = [
     name: "michael mangus",
     pic: "../img/Michael.jpg",
     title: "UI Developer",
-    info: ""
+    info: "https://github.com/mjmangus16"
   },
   {
     name: "mike jean-baptiste",
@@ -15,19 +15,19 @@ const users = [
     name: "ang xu",
     pic: "../img/Ang.jpg",
     title: "UI Developer",
-    info: ""
+    info: "https://github.com/Labyrinth65"
   },
   {
     name: "joseph rios",
     pic: "../img/Joseph.jpg",
     title: "Back End Architect",
-    info: ""
+    info: "https://github.com/josephriosIO"
   },
   {
     name: "jared parrish",
     pic: "../img/Jared.jpg",
     title: "Front End Architect",
-    info: ""
+    info: "https://github.com/ParrishJ"
   }
 ];
 
@@ -35,9 +35,19 @@ class AboutUser {
   constructor(el, user) {
     this.el = el;
 
-    this.input = document.createElement("input");
-    this.input.setAttribute("type", "checkbox");
-    this.input.setAttribute("name", "");
+    this.input1 = document.createElement("input");
+    this.input1.setAttribute("type", "checkbox");
+
+    this.aTag = document.createElement("a");
+    this.aTag.href = user.info;
+    this.aTag.classList.add("repo-link");
+    this.aTag.setAttribute("target", "_blank");
+
+    if (user.title !== "UX Designer") {
+      this.aTag.textContent = "Visit Github";
+    } else {
+      this.aTag.textContent = "Visit InVision";
+    }
 
     this.div1 = document.createElement("div");
     this.div1.classList.add("toggle");
@@ -47,14 +57,14 @@ class AboutUser {
     this.div2.classList.add("imgBx");
 
     this.img = document.createElement("img");
-    this.img.classList.add("userImage");
 
     this.div2.append(this.img);
 
     this.div3 = document.createElement("div");
     this.div3.classList.add("content");
 
-    this.el.append(this.input);
+    this.el.append(this.input1);
+    this.el.append(this.aTag);
     this.el.append(this.div1);
     this.el.append(this.div2);
     this.el.append(this.div3);
@@ -71,12 +81,8 @@ class AboutUser {
     this.title = document.createElement("h5");
     this.title.textContent = user.title;
 
-    this.info = document.createElement("p");
-    this.info.textContent = user.info;
-
     this.contentBx.append(this.name);
     this.contentBx.append(this.title);
-    this.contentBx.append(this.info);
   }
 }
 
