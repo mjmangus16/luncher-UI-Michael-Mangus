@@ -269,6 +269,7 @@ p {
 @media (max-width: 775px) {
   .nav-container nav .active-link {
     background-color: #ecb993;
+    color: #025e51;
   }
 }
 .nav-container nav .visible {
