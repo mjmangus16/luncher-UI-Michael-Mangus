@@ -136,7 +136,7 @@ html {
 html,
 body {
   font-family: "Ubuntu", sans-serif;
-  background-color: #f0f0f0;
+  background-color: #f5f5f5;
 }
 h1,
 h2,
@@ -172,7 +172,7 @@ p {
 .nav-container {
   width: 100%;
   text-align: center;
-  background-color: #97f793;
+  background-color: #025e51;
   box-shadow: 2px 2px 10px;
   position: fixed;
   top: 0;
@@ -196,6 +196,7 @@ p {
 }
 .nav-container .logo-container h1 {
   padding-top: 10px;
+  color: #ecb993;
 }
 @media (max-width: 775px) {
   .nav-container .logo-container h1 {
@@ -206,6 +207,7 @@ p {
 }
 .nav-container .logo-container button {
   display: none;
+  color: #ecb993;
 }
 .nav-container .logo-container button:focus {
   outline: 0;
@@ -249,6 +251,7 @@ p {
   color: #404040;
   padding: 10px 20px 5px;
   margin-bottom: 5px;
+  color: #ecb993;
 }
 @media (max-width: 775px) {
   .nav-container nav a {
@@ -261,11 +264,11 @@ p {
   }
 }
 .nav-container nav .active-link {
-  border-bottom: 3px solid #f7bb50;
+  border-bottom: 3px solid #ecb993;
 }
 @media (max-width: 775px) {
   .nav-container nav .active-link {
-    background-color: #f7bb50;
+    background-color: #ecb993;
   }
 }
 .nav-container nav .visible {
@@ -285,7 +288,7 @@ footer {
   padding: 20px 0;
   text-align: center;
   color: #404040;
-  background-color: #97f793;
+  background-color: #025e51;
   box-shadow: 2px 2px 10px;
 }
 @media (max-width: 775px) {
@@ -294,6 +297,9 @@ footer {
     margin-bottom: 0px;
     border-radius: 0px;
   }
+}
+footer p {
+  color: #ecb993;
 }
 @media (max-width: 775px) {
   footer p {
@@ -412,7 +418,7 @@ footer {
   border: none;
   border-radius: 1rem;
   font-size: 1.75rem;
-  background-color: #f7bb50;
+  background-color: #ecb993;
   box-shadow: 1px 1px 10px;
   cursor: pointer;
 }
@@ -476,7 +482,7 @@ footer {
   opacity: 0;
 }
 .about .aboutUser input:checked ~ .toggle {
-  box-shadow: 0 0 0 500px #f7bb50;
+  box-shadow: 0 0 0 500px #ecb993;
   transform: rotate(225deg);
   background: #fff;
 }
@@ -491,12 +497,12 @@ footer {
 .about .aboutUser .toggle {
   pointer-events: none;
   border-radius: 50%;
-  background: #f7bb50;
+  background: #ecb993;
   transition: 0.5s;
   text-align: center;
   line-height: 45px;
   font-size: 36px;
-  box-shadow: 0 0 0 0px #f7bb50;
+  box-shadow: 0 0 0 0px #ecb993;
 }
 .about .aboutUser .imgBx,
 .about .aboutUser .content {
